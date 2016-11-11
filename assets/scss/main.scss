@@ -90,12 +90,40 @@ picture {
 }
 
 header {
-  background-color: $gray-light;
-  .logo {
-    display: block;
+  display: flex;
+  flex-direction: row;
+
+  height: 125px;
+
+  border-bottom: 8px solid $brown-dark;
+  background-color: $brown;
+
+  align-items: center;
+  justify-content: center;
+  .header--logo,
+  .header--nav,
+  .header--phone {
+    display: inline-block;
+
+    height: 100%;
+  }
+  .header--logo {
+    width: 20%;
+
+    background-color: red;
     img {
       max-width: 100%;
     }
+  }
+  .header--nav {
+    width: 47%;
+
+    background-color: blue;
+  }
+  .header--phone {
+    width: 28%;
+
+    background-color: green;
   }
 }
 nav {
