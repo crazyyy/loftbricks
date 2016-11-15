@@ -349,7 +349,8 @@ header {
   background-size: cover;
 }
 
-.home-first {
+.home-first,
+.ancient-first {
   background-image: url(../img/bg/home-first.jpg);
 
   @extend .blockbg;
@@ -374,7 +375,45 @@ header {
     color: #fff;
   }
 }
+.ancient-first {
+  position: relative;
 
+  padding-left: 30%;
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+    overflow: hidden;
+
+    width: 347px;
+    height: 347px;
+    margin-top: -173px;
+border: 6px solid $gray-medium;
+    border-radius: 50%;
+    background-image: url(../img/bg/ancient-first.png);
+    background-repeat: no-repeat;
+
+    @extend .dblock;
+  }
+  .ancient-first--title,
+  .ancient-first--subtitle {
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+  .ancient-first--title {
+    font-size: 91px;
+
+    margin-bottom: 15px;
+  }
+  .ancient-first--subtitle {
+    font-size: 43px;
+
+    margin-bottom: 15px;
+  }
+}
 .home-second {
   position: relative;
 
