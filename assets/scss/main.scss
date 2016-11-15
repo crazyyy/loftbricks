@@ -644,9 +644,76 @@ header {
   }
 }
 .home-five {
+  padding-top: 135px;
+
   background-image: url(../img/bg/home-five.jpg);
 
   @extend .blockbg;
+  .vs-center-wrap {
+    &:before {
+      top: 125px;
+      bottom: auto;
+    }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 540px;
+      height: 694px;
+
+      background-image: url(../img/home-five-girl.png);
+
+      @extend .dblock;
+    }
+  }
+  .fogged {
+    height: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 35%;
+
+    color: $brown;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+      margin: auto;
+    }
+  }
+  .home-five--title {
+    font-size: 200px;
+    line-height: .7;
+
+    margin-bottom: 10px;
+  }
+  .home-five--subtitle {
+    font-size: 56px;
+    line-height: .7;
+
+    margin-bottom: 10px;
+  }
+  .home-five--thirdtitle {
+    font-size: 200px;
+    line-height: .7;
+
+    margin-bottom: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    border-bottom: 2px solid $brown;
+  }
+  .home-five--description {
+    font-size: 25px;
+  }
+  .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .home-six {
   background-image: url(../img/bg/home-six.jpg);
