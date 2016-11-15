@@ -74,7 +74,144 @@ picture {
   max-width: 100%;
   margin: 0;
 }
+.btn {
+  font-size: 30px;
+  font-weight: normal;
 
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-bottom: 3px solid darken($blue, 10%);
+  border-radius: 15px;
+  &.btn-red {
+    border-bottom: 3px solid darken($red, 10%);
+    background-color: $red;
+  }
+  &:hover {
+    text-decoration: none;
+    &.btn-red {
+      border-bottom: 3px solid darken($red, 20%);
+      background-color: darken($red, 10%);
+    }
+  }
+}
+
+.red-form {
+  position: relative;
+
+  width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  text-align: center;
+
+  border-radius: 30px;
+  background-color: $red;
+  .red-form--title {
+    font-size: 70px;
+
+    margin-bottom: 10px;
+    padding-right: 80px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+  .red-form--subtitle {
+    font-size: 33px;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+  .discount {
+    font-size: 70px;
+
+    position: absolute;
+    top: 15px;
+    right: 35px;
+
+    display: block;
+
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+
+    text-align: center;
+
+    color: #000;
+    border-radius: 50%;
+    background-color: $yellow;
+    span {
+      font-size: 36px;
+    }
+  }
+  input,
+  button {
+    font-size: 17px;
+
+    display: inline-block;
+
+    width: 290px;
+    height: 35px;
+    margin-right: 10px;
+
+    text-transform: uppercase;
+
+    border-radius: 15px;
+
+    justify-content: space-between;
+  }
+  button {
+    font-size: 34px;
+
+    margin-right: 0;
+    margin-left: 10px;
+    padding: 0;
+
+    text-align: center;
+
+    color: #000;
+    background-color: $yellow;
+    &:hover {
+      background-color: darken($yellow, 20%);
+    }
+  }
+}
+.brown-wth-border {
+  border-bottom: 8px solid $brown-dark;
+  background-color: $brown;
+}
+.title-with-arrow {
+  font-size: 92px;
+
+  position: relative;
+
+  padding: 0;
+
+  text-transform: uppercase;
+
+  color: $gray-medium;
+
+  @extend .brown-wth-border;
+  &:after {
+    position: absolute;
+    bottom: -44px;
+    left: 50%;
+
+    margin-left: -683px;
+
+    @include triangle(1366px 36px, $red, down);
+    @extend .dblock;
+  }
+}
 header {
   position: fixed;
   z-index: 5;
@@ -87,9 +224,7 @@ header {
 
   height: 125px;
 
-  border-bottom: 8px solid $brown-dark;
-  background-color: $brown;
-
+  @extend .brown-wth-border;
   align-items: center;
   justify-content: center;
   .header--logo,
@@ -165,7 +300,6 @@ header {
   }
 }
 
-
 .blockbg {
   background-repeat: no-repeat;
   background-position: center;
@@ -176,12 +310,96 @@ header {
   background-image: url(../img/bg/home-first.jpg);
 
   @extend .blockbg;
+  .home-first--title {
+    font-size: 80px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+  }
+  .home-first--subtitle {
+    font-size: 50px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+  }
 }
 
 .home-second {
+  position: relative;
+
+  padding-top: 284px;
+
   background-image: url(../img/bg/home-second.jpg);
 
   @extend .blockbg;
+  .home-second--title {
+    position: absolute;
+    top: 125px;
+    right: 0;
+    left: 0;
+
+    @extend .title-with-arrow;
+  }
+  .weoffer {
+    display: inline-block;
+
+    width: 330px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 15px;
+
+    background-color: $gray-light;
+    img {
+      width: 300px;
+      height: 260px;
+      margin-bottom: 10px;
+    }
+    .weoffer--title {
+      font-size: 30px;
+      font-weight: bold;
+
+      height: 60px;
+      margin-bottom: 15px;
+
+      text-transform: uppercase;
+    }
+    .weoffer--subtitle {
+      font-size: 21px;
+      font-weight: bold;
+
+      height: 40px;
+      margin-bottom: 10px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    ul {
+      display: block;
+
+      height: 75px;
+      margin: 0 0 20px;
+      padding: 0;
+
+      text-align: left;
+      li {
+        font-size: 23px;
+
+        margin-bottom: 5px;
+      }
+    }
+    .btn {
+      display: inline-block;
+
+      width: 100%;
+    }
+  }
 }
 
 .home-third {
