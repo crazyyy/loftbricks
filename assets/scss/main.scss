@@ -382,7 +382,7 @@ header {
   &:before {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 10%;
 
     overflow: hidden;
 
@@ -546,12 +546,14 @@ header {
     }
   }
   .fogged {
+    display: flex;
+
     height: 95%;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
+
     flex-flow: row wrap;
-     justify-content: space-around;
+    justify-content: space-around;
   }
   .material-title {
     font-size: 49px;
@@ -567,11 +569,13 @@ header {
       margin-bottom: 15px;
     }
     .material-subtitle {
-      text-align: left;
       font-size: 25px;
       font-weight: bold;
-      padding-left: 5px;
+
       padding-right: 5px;
+      padding-left: 5px;
+
+      text-align: left;
     }
   }
 }
@@ -646,7 +650,8 @@ header {
   }
 }
 
-.home-third {
+.home-third,
+.ancient-fourth {
   padding-top: 135px;
   padding-bottom: 40px;
 
@@ -701,7 +706,8 @@ header {
   }
 }
 
-.home-fourth {
+.home-fourth,
+.ancient-five {
   padding-top: 245px;
 
   background-image: url(../img/bg/home-fourth.jpg);
@@ -843,7 +849,8 @@ header {
     }
   }
 }
-.home-five {
+.home-five,
+.ancient-six {
   padding-top: 135px;
 
   background-image: url(../img/bg/home-five.jpg);
@@ -1003,7 +1010,50 @@ header {
     }
   }
 }
+.ancient-seven {
+  padding-top: 125px;
 
+  background-image: url(../img/bg/ancient-seven.jpg);
+
+  @extend .blockbg;
+  .vs-center-wrap {
+    &:before {
+      top: 125px;
+      bottom: auto;
+    }
+  }
+  .fogged {
+    height: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30%;
+
+    background-image: url(../img/bg/ancient-seven-fogged.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    .ancient-seven--title,
+    .ancient-seven--subtitle,
+    .ancient-seven--thirdtitle,
+    .ancient-seven--description {
+      line-height: 1;
+    }
+    .ancient-seven--title {
+      font-size: 108px;
+    }
+    .ancient-seven--subtitle {
+      font-size: 185px;
+      span {
+        font-weight: bold;
+      }
+    }
+    .ancient-seven--thirdtitle {
+      font-size: 59px;
+    }
+    .ancient-seven--description {
+      font-size: 78px;
+    }
+  }
+}
 .home-seven {
   padding-top: 125px;
 
