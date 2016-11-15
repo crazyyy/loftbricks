@@ -905,8 +905,6 @@ $(document).ready(function() {
   // triangle set width
   var screenWidth = $('.home-second--title').width();
   var borderWidth = screenWidth / 2 + 'px';
-  $('<style>.title-with-arrow::after,.home-second .home-second--title::after{border-left-width:'+ borderWidth+';border-right-width:'+borderWidth+';margin-left:-'+borderWidth+';}</style>').appendTo('header');
-
-
+  $('<style>.arrow-top::after,.home-second .arrow-top::after{border-left-width:'+ borderWidth+';border-right-width:'+borderWidth+';margin-left:-'+borderWidth+';}</style>').appendTo('header');
 
 });

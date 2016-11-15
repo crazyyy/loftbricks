@@ -189,6 +189,31 @@ picture {
   border-bottom: 8px solid $brown-dark;
   background-color: $brown;
 }
+.arrow-top,
+.arrow-bottom {
+  &:after {
+    position: absolute;
+    left: 50%;
+
+    margin-left: -683px;
+
+    @extend .dblock;
+  }
+}
+.arrow-top {
+  &:after {
+    bottom: -28px;
+
+    @include triangle(1366px 20px, $red, down);
+  }
+}
+.arrow-bottom {
+  &:after {
+    bottom: 0;
+
+    @include triangle(1366px 20px, $red, up);
+  }
+}
 .title-with-arrow {
   font-size: 92px;
 
@@ -201,16 +226,6 @@ picture {
   color: $gray-medium;
 
   @extend .brown-wth-border;
-  &:after {
-    position: absolute;
-    bottom: -44px;
-    left: 50%;
-
-    margin-left: -683px;
-
-    @include triangle(1366px 36px, $red, down);
-    @extend .dblock;
-  }
 }
 header {
   position: fixed;
@@ -336,6 +351,7 @@ header {
   position: relative;
 
   padding-top: 284px;
+  padding-bottom: 40px;
 
   background-image: url(../img/bg/home-second.jpg);
 
