@@ -711,14 +711,97 @@ header {
     font-size: 25px;
   }
   .btn {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 }
 .home-six {
+  padding-top: 210px;
+
   background-image: url(../img/bg/home-six.jpg);
 
   @extend .blockbg;
+  .home-six--title {
+    font-size: 75px;
+    line-height: 1;
+
+    position: absolute;
+    top: 125px;
+    right: 0;
+    left: 0;
+
+    @extend .title-with-arrow;
+  }
+  .fogged {
+    position: relative;
+
+    height: 85%;
+    margin: auto;
+
+    background-image: url(../img/bg/home-six-fog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .home-six--item {
+    position: absolute;
+
+    width: 330px;
+    .home-six--item-t {
+      font-size: 30px;
+      font-weight: bold;
+
+      position: relative;
+
+      margin-bottom: 20px;
+
+      text-align: center;
+      &:after {
+        position: absolute;
+        right: 30px;
+        bottom: -8px;
+        left: 30px;
+
+        height: 2px;
+
+        background-color: $brown;
+
+        @extend .dblock;
+      }
+    }
+    .home-six--item-d {
+      font-size: 25px;
+
+      padding-right: 10%;
+      padding-left: 10%;
+      span {
+        font-weight: bold;
+      }
+    }
+    &:nth-child(1) {
+      top: 50px;
+      left: 30px;
+    }
+    &:nth-child(2) {
+      top: 50px;
+      right: 25px;
+    }
+    &:nth-child(3) {
+      top: 240px;
+      right: 25px;
+    }
+    &:nth-child(4) {
+      top: 350px;
+      left: 15px;
+    }
+    &:nth-child(5) {
+      top: 470px;
+      right: 540px;
+    }
+    &:nth-child(6) {
+      top: 465px;
+      right: 25px;
+    }
+  }
 }
 
 .home-seven {
