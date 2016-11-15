@@ -100,36 +100,71 @@ header {
     height: 100%;
   }
   .header--logo {
+    display: flex;
+    flex-direction: row;
+
     width: 20%;
 
-    background-color: red;
+    align-items: center;
+    justify-content: space-around;
     img {
       max-width: 100%;
     }
   }
   .header--nav {
-    width: 47%;
+    width: 52%;
+    padding-top: 25px;
+    ul {
+      display: flex;
+      flex-direction: row;
 
-    background-color: blue;
-  }
-  .header--phone {
-    width: 28%;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        display: inline-block;
 
-    background-color: green;
-  }
-}
-nav {
-  ul {
-    @extend .justify-child;
-    @extend .clearfix;
-    li {
-      display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        span {
+          display: block;
+        }
+        a {
+          font-size: 30px;
+
+          text-decoration: none;
+
+          color: #fff;
+        }
+        &:hover {
+          a {
+            text-decoration: none;
+
+            color: $red;
+          }
+        }
+      }
     }
   }
-  .headnav {
-    font-size: 100%;
+  .header--phone {
+    font-size: 57px;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 23%;
+
+    color: $gray-medium;
+
+    align-items: center;
+    justify-content: space-around;
+    &:hover {
+      text-decoration: none;
+
+      color: darken($gray-medium, 15%);
+    }
   }
 }
+
 
 .blockbg {
   background-repeat: no-repeat;
@@ -185,9 +220,7 @@ nav {
 
 
 
-
-
 @import 'fonts/font_fontawesome';
-@import 'fonts/font_roboto';
+@import 'fonts/font_myriadpro';
 @import 'base64';
 @import 'import/print';
