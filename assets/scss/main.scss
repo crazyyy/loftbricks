@@ -238,9 +238,8 @@ picture {
 
   color: $brown;
   border-radius: 30px;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, .75);
 
+  @extend .fogbg;
   align-items: center;
   justify-content: center;
   h1,
@@ -503,9 +502,146 @@ header {
 }
 
 .home-fourth {
+  padding-top: 245px;
+
   background-image: url(../img/bg/home-fourth.jpg);
 
   @extend .blockbg;
+  .home-fourth--title,
+  .home-fourth--subtitle {
+    line-height: .8;
+
+    position: absolute;
+    top: 125px;
+    right: 0;
+    left: 0;
+
+    margin-bottom: 20px;
+
+    @extend .title-with-arrow;
+  }
+  .home-fourth--subtitle {
+    position: relative;
+    top: 0;
+
+    margin-bottom: 35px;
+  }
+  .home-fourth--facts {
+    position: relative;
+
+    display: inline-block;
+
+    width: 363px;
+    height: 275px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    .facts--image {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 8px;
+
+      display: block;
+      overflow: hidden;
+
+      width: 290px;
+      height: 170px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .facts--descr {
+      font-size: 15px;
+      line-height: 1.3;
+
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+
+      width: 365px;
+      height: 192px;
+      padding-top: 95px;
+      padding-right: 15px;
+      padding-left: 115px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #fff;
+      background-image: url(../img/bg/facts--descr.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      .facts--count {
+        font-size: 30px;
+        line-height: 2.2;
+
+        position: absolute;
+        bottom: 108px;
+        left: 51px;
+
+        display: block;
+
+        width: 70px;
+        height: 70px;
+        padding: 0;
+
+        text-transform: none;
+
+        border-radius: 50%;
+        span {
+          font-size: 11px;
+          line-height: 1;
+
+          position: relative;
+          top: -20px;
+
+          display: block;
+        }
+      }
+    }
+  }
+  .advantages-container {
+    display: flex;
+
+    width: 100%;
+    height: 240px;
+
+    align-content: center;
+    flex-flow: row wrap;
+  }
+  .advantages {
+    display: inline-block;
+
+    width: 610px;
+    height: 115px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 15px 50px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 15px;
+
+    @extend .fogbg;
+    .advantages--title {
+      font-size: 29px;
+      line-height: 1;
+
+      margin-bottom: 5px;
+    }
+    .advantages--description {
+      font-size: 20px;
+      line-height: 1;
+
+      margin-bottom: 0;
+    }
+  }
 }
 .home-five {
   background-image: url(../img/bg/home-five.jpg);

@@ -35,12 +35,16 @@ $brown-light: #cabcb1;
 $red: #c74127;
 $gray-medium: #cabcb1;
 $gray-light: #e7e6e6;
-$yellow: #F4EA1A;
-
+$yellow: #f4ea1a;
 $orange: orange;
 $blue: #477dca;
 $gray-dark: #333;
 $gray-light: #ddd;
+
+.fogbg {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .75);
+}
 
 // Font Colors
 $base-font-color: $gray-dark;
