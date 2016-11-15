@@ -191,7 +191,8 @@ picture {
 }
 .arrow-top,
 .arrow-bottom {
-  &:after {
+  &:after,
+  &:before {
     position: absolute;
     left: 50%;
 
@@ -201,7 +202,7 @@ picture {
   }
 }
 .arrow-top {
-  &:after {
+  &:before {
     bottom: -28px;
 
     @include triangle(1366px 20px, $red, down);
@@ -226,6 +227,34 @@ picture {
   color: $gray-medium;
 
   @extend .brown-wth-border;
+}
+.fogged {
+  display: flex;
+  flex-direction: column;
+
+  width: 95%;
+  height: 100%;
+  padding: 0 65px;
+
+  color: $brown;
+  border-radius: 30px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .75);
+
+  align-items: center;
+  justify-content: center;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: .9;
+
+    margin: 0;
+
+    text-transform: uppercase;
+  }
 }
 header {
   position: fixed;
@@ -419,9 +448,58 @@ header {
 }
 
 .home-third {
+  padding-top: 135px;
+  padding-bottom: 40px;
+
   background-image: url(../img/bg/home-third.jpg);
 
   @extend .blockbg;
+  .vs-center-wrap {
+    &:before {
+      top: 125px;
+    }
+  }
+  .vs-center {
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+    padding-top: 50px;
+
+    align-items: center;
+    justify-content: center;
+    .fogged {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      .home-third--title {
+        font-size: 210px;
+      }
+      .home-third--subtitle {
+        font-size: 113px;
+      }
+      .home-third--thirdtitle {
+        font-size: 93px;
+
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+
+        border-bottom: 6px solid $brown;
+        span {
+          display: block;
+        }
+      }
+      .home-third--description {
+        font-size: 25px;
+
+        margin-bottom: 30px;
+      }
+      .btn {
+        display: inline-block;
+
+        width: 370px;
+      }
+    }
+  }
 }
 
 .home-fourth {
