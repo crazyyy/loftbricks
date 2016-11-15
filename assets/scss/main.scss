@@ -1054,7 +1054,8 @@ header {
     }
   }
 }
-.home-seven {
+.home-seven,
+.ancient-eight {
   padding-top: 125px;
 
   background-image: url(../img/bg/home-seven.jpg);
@@ -1144,7 +1145,8 @@ header {
     }
   }
 }
-.home-eight {
+.home-eight,
+.ancient-nine {
   padding-top: 125px;
 
   background-image: url(../img/bg/home-eight.jpg);
@@ -1183,6 +1185,8 @@ header {
       span {
         border: 2px dashed $brown;
         border-radius: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
       }
     }
     .home-eight--description {
