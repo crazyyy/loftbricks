@@ -51,21 +51,3 @@ html {
   height: 100%;
   width: 100%;
 }
-
-/* subviews */
-
-.subbag {
-  overflow: hidden;
-  height: 100%;
-  white-space: nowrap;
-  font-size: 0;
-}
-
-.subview {
-  position: relative;
-
-  /* important for any centered content inside subviews */
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
