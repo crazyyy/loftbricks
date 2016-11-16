@@ -220,6 +220,9 @@ picture {
 .arrow-bottom {
   &:after {
     bottom: 0;
+    /* tempolary disabled bottom arrows */
+
+    display: none !important;
 
     @include triangle(1366px 20px, $red, up);
   }
@@ -336,18 +339,21 @@ header {
     font-size: 57px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     width: 23%;
 
     color: $gray-medium;
 
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     &:hover {
       text-decoration: none;
 
       color: darken($gray-medium, 15%);
+    }
+    span {
+      font-size: 16px;
     }
   }
 }
@@ -1155,7 +1161,8 @@ header {
   }
 }
 .home-eight,
-.ancient-nine {
+.ancient-nine,
+.design-five {
   padding-top: 125px;
 
   background-image: url(../img/bg/home-eight.jpg);
@@ -1201,6 +1208,58 @@ header {
     }
     .home-eight--description {
       font-size: 102px;
+    }
+    .btn {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+.design-five {
+  background-image: url(../img/bg/home-five.jpg);
+  .fogged {
+    .design-five--title,
+    .design-five--subtitle,
+    .design-five--thirdtitle,
+    .design-five--description {
+      line-height: 1;
+
+      margin: auto;
+    }
+    .design-five--title {
+      font-size: 130px;
+    }
+    .design-five--subtitle {
+      font-size: 174px;
+    }
+    .design-five--thirdtitle {
+      font-size: 25px;
+
+      position: relative;
+
+      padding-top: 15px;
+      &:before {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        left: 0;
+
+        height: 2px;
+
+        background-color: $brown;
+
+        @extend .dblock;
+      }
+    }
+    .design-five--description {
+      font-size: 70px;
+      span {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        border: 2px dashed $brown;
+        border-radius: 15px;
+      }
     }
     .btn {
       padding-right: 15px;

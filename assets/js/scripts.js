@@ -898,10 +898,10 @@ jQuery.extend(jQuery.easing, {
 
 $(document).ready(function() {
   // Sets viewScroller
-  $('.mainbag').viewScroller({
-    useScrollbar: false,
-    changeWhenAnim: false
-  });
+  // $('.mainbag').viewScroller({
+  //   useScrollbar: false,
+  //   changeWhenAnim: false
+  // });
   // triangle set width
   var screenWidth = $('.home-second--title').width();
   var borderWidth = screenWidth / 2 + 'px';
