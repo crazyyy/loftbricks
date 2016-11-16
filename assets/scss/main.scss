@@ -88,13 +88,22 @@ picture {
   border-radius: 15px;
   &.btn-red {
     border-bottom: 3px solid darken($red, 10%);
-    background-color: $red;
+    background-color: $red-light;
+  }
+  &.btn-yellow {
+    color: #000;
+    border-bottom: 3px solid darken($yellow, 20%);
+    background-color: $yellow;
   }
   &:hover {
     text-decoration: none;
     &.btn-red {
       border-bottom: 3px solid darken($red, 20%);
-      background-color: darken($red, 10%);
+      background-color: darken($red-light, 10%);
+    }
+    &.btn-yellow {
+      border-bottom: 3px solid darken($yellow, 30%);
+      background-color: darken($yellow, 20%);
     }
   }
 }
@@ -1183,10 +1192,11 @@ header {
     .home-eight--fourthtitle {
       font-size: 102px;
       span {
-        border: 2px dashed $brown;
-        border-radius: 15px;
         padding-right: 15px;
         padding-left: 15px;
+
+        border: 2px dashed $brown;
+        border-radius: 15px;
       }
     }
     .home-eight--description {
@@ -1198,8 +1208,157 @@ header {
     }
   }
 }
+.design-first,
+.design-second,
+.design-third {
+  position: relative;
 
+  padding-top: 210px;
+  padding-bottom: 30px;
 
+  background-image: url(../img/bg/home-second.jpg);
+
+  @extend .blockbg;
+  .design--title {
+    font-size: 45px;
+    line-height: 1;
+
+    position: absolute;
+    top: 125px;
+    right: 0;
+    left: 0;
+
+    @extend .title-with-arrow;
+    span {
+      font-weight: bold;
+    }
+  }
+  .fogged {
+    display: flex;
+
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .btn {
+    font-size: 39px;
+
+    padding-top: 3px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+  }
+  .design--item {
+    display: inline-block;
+
+    width: 30%;
+    height: 200px;
+
+    text-align: center;
+    img {
+      width: 250px;
+      height: 150px;
+      margin-bottom: 5px;
+
+      border: 1px solid #fff;
+    }
+    .btn {
+      font-size: 28px;
+
+      display: inline-block;
+
+      width: 250px;
+      padding-top: 3px;
+      padding-right: 0;
+      padding-bottom: 3px;
+      padding-left: 0;
+    }
+  }
+}
+.design-fourth {
+  padding-top: 155px;
+  padding-bottom: 40px;
+
+  background-image: url(../img/bg/home-third.jpg);
+
+  @extend .blockbg;
+  .vs-center-wrap {
+    &:before {
+      top: 125px;
+      bottom: auto;
+    }
+  }
+  .fogged {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .design-fourth--title,
+  .design-fourth--subtitle,
+  .design-fourth--thirdtitle,
+  .design-fourth--description,
+  .design-fourth--fourthtitle {
+    line-height: 1;
+  }
+  .design-fourth--title {
+    font-size: 130px;
+    span {
+      font-weight: bold;
+    }
+  }
+  .design-fourth--subtitle {
+    font-size: 130px;
+  }
+  .design-fourth--thirdtitle {
+    font-size: 130px;
+    span {
+      font-weight: bold;
+    }
+  }
+  .design-fourth--description {
+    font-size: 25px;
+
+    position: relative;
+
+    margin-bottom: 15px;
+    padding-top: 10px;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 20%;
+      left: 20%;
+
+      height: 2px;
+
+      background-color: $brown;
+
+      @extend .dblock;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+  .design-fourth--fourthtitle {
+    font-size: 70px;
+    span {
+      display: inline-block;
+
+      padding: 8px;
+
+      border: 3px dashed $brown;
+      border-radius: 15px;
+    }
+  }
+  .btn {
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
+}
 
 
 @import 'fonts/font_fontawesome';
