@@ -65,6 +65,7 @@ if (typeof jQuery === 'undefined') {
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
+/*
 jQuery.easing.jswing = jQuery.easing.swing;
 jQuery.extend(jQuery.easing, {
   def: "easeOutQuad",
@@ -270,6 +271,7 @@ jQuery.extend(jQuery.easing, {
     return jQuery.easing.easeOutBounce(e, f * 2 - g, 0, h, g) * 0.5 + h * 0.5 + a
   }
 });
+*/
 /*!
  * jQuery Mousewheel 3.1.13
  *
@@ -277,6 +279,7 @@ jQuery.extend(jQuery.easing, {
  * Released under the MIT license.
  * http://jquery.org/license
  */
+/*
 ! function(a) {
   "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a : a(jQuery)
 }(function(a) {
@@ -353,6 +356,7 @@ jQuery.extend(jQuery.easing, {
     }
   })
 });
+*/
 /*
  * =================================================
  * viewScroller
@@ -361,6 +365,7 @@ jQuery.extend(jQuery.easing, {
  * http://www.viewdesic.com
  * =================================================
  */
+/*
 ! function(a) {
   a.fn.viewScroller = function(b) {
     function J() {
@@ -895,7 +900,7 @@ jQuery.extend(jQuery.easing, {
     Va()
   }
 }(jQuery);
-
+*/
 $(document).ready(function() {
   // Sets viewScroller
   // $('.mainbag').viewScroller({

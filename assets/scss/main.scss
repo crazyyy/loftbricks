@@ -432,16 +432,18 @@ header {
 }
 .ancient-second {
   position: relative;
+  /* padding-top: 284px; */
 
-  padding-top: 284px;
-  padding-bottom: 40px;
+  padding-top: 55px;
+  padding-bottom: 60px;
 
   background-image: url(../img/bg/home-second.jpg);
 
   @extend .blockbg;
   .ancient-second--title {
     position: absolute;
-    top: 125px;
+    /* top: 125px; */
+    top: 0;
     right: 0;
     left: 0;
 
@@ -535,8 +537,9 @@ header {
 }
 .ancient-third {
   position: relative;
+  /* padding-top: 360px; */
 
-  padding-top: 360px;
+  padding-top: 220px;
   padding-bottom: 40px;
 
   background-image: url(../img/bg/home-second.jpg);
@@ -546,7 +549,8 @@ header {
     line-height: 1;
 
     position: absolute;
-    top: 125px;
+    /* top: 125px; */
+    top: 0;
     right: 0;
     left: 0;
 
@@ -667,7 +671,8 @@ header {
 
 .home-third,
 .ancient-fourth {
-  padding-top: 135px;
+  /* padding-top: 135px; */
+  padding-top: 0;
   padding-bottom: 40px;
 
   background-image: url(../img/bg/home-third.jpg);
@@ -675,7 +680,8 @@ header {
   @extend .blockbg;
   .vs-center-wrap {
     &:before {
-      top: 125px;
+      /* top: 125px; */
+      top: 0;
     }
   }
   .vs-center {
@@ -723,7 +729,8 @@ header {
 
 .home-fourth,
 .ancient-five {
-  padding-top: 245px;
+  /* padding-top: 245px; */
+  padding-top: 25px;
 
   background-image: url(../img/bg/home-fourth.jpg);
 
@@ -733,7 +740,8 @@ header {
     line-height: .8;
 
     position: absolute;
-    top: 125px;
+    /* top: 125px; */
+    top: 0;
     right: 0;
     left: 0;
 
@@ -830,7 +838,10 @@ header {
     display: flex;
 
     width: 100%;
+    max-width: 1250px;
     height: 240px;
+    margin-right: auto;
+    margin-left: auto;
 
     align-content: center;
     flex-flow: row wrap;
@@ -866,14 +877,17 @@ header {
 }
 .home-five,
 .ancient-six {
-  padding-top: 135px;
+  /* padding-top: 135px; */
+  padding-top: 45px;
+  padding-bottom: 85px;
 
   background-image: url(../img/bg/home-five.jpg);
 
   @extend .blockbg;
   .vs-center-wrap {
     &:before {
-      top: 125px;
+      /* top: 125px; */
+      top: 0;
       bottom: auto;
     }
     &:after {
@@ -1026,14 +1040,17 @@ header {
   }
 }
 .ancient-seven {
-  padding-top: 125px;
+  /* padding-top: 125px; */
+  padding-top: 140px;
+  padding-bottom: 40px;
 
   background-image: url(../img/bg/ancient-seven.jpg);
 
   @extend .blockbg;
   .vs-center-wrap {
     &:before {
-      top: 125px;
+      /* top: 125px; */
+      top: 0;
       bottom: auto;
     }
   }
@@ -1071,14 +1088,17 @@ header {
 }
 .home-seven,
 .ancient-eight {
-  padding-top: 125px;
+  /*   padding-top: 125px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-image: url(../img/bg/home-seven.jpg);
 
   @extend .blockbg;
   .vs-center-wrap {
     &:before {
-      top: 125px;
+      /* top: 125px; */
+      top: 0;
       bottom: auto;
     }
   }
@@ -1163,14 +1183,17 @@ header {
 .home-eight,
 .ancient-nine,
 .design-five {
-  padding-top: 125px;
+  /* padding-top: 125px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   background-image: url(../img/bg/home-eight.jpg);
 
   @extend .blockbg;
   .vs-center-wrap {
     &:before {
-      top: 125px;
+      /* top: 125px; */
+      top: 0;
       bottom: auto;
     }
   }
