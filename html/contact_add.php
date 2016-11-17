@@ -1,18 +1,18 @@
 <?php
 $contact=array(
-      'name'=>$data['name'],
-      'custom_fields'=>array(
+  'name'=>$data['name'],
+  'custom_fields'=>array(
+    array(
+      'id'=>$custom_fields['EMAIL'],
+      'values'=>array(
         array(
-          'id'=>$custom_fields['EMAIL'],
-          'values'=>array(
-            array(
-              'value'=>$data['email'],
-              'enum'=>'WORK'
-            )
-          )
+          'value'=>$data['email'],
+          'enum'=>'WORK'
         )
       )
-    );
+    )
+  )
+);
 
 if(!empty($data['company']))
   $contact+=array('company_name'=>$data['company']);

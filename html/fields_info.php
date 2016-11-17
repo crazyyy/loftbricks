@@ -1,5 +1,5 @@
 <?php
-$need=array_flip(array('POSITION','PHONE','EMAIL','WEB','IM','SCOPE'));
+$need=array_flip(array('POSITION','PHONE','EMAIL'/*,'WEB','IM','SCOPE'*/));
 if(isset($account['custom_fields'],$account['custom_fields']['contacts']))
   do
   {

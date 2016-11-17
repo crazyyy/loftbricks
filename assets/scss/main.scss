@@ -193,6 +193,23 @@ picture {
       background-color: darken($yellow, 20%);
     }
   }
+  .form-sended {
+    font-size: 30px;
+    font-weight: bold;
+
+    display: none;
+
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    span {
+      font-size: 25px;
+
+      display: block;
+    }
+  }
 }
 .brown-wth-border {
   border-bottom: 8px solid $brown-dark;

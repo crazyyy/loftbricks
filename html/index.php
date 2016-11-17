@@ -57,19 +57,22 @@ window.onload = function () {
 
   <div class="mainbag">
 
-
     <div class="mainview ancient-first">
       <div class="vs-center-wrap">
         <div class="vs-center">
           <h1 class="ancient-first--title">плитка для стиля LOFT</h1>
           <h2 class="ancient-first--subtitle">из подлинного старинного кирпича 18-19 века</h2>
 
-          <form action="handler.php" method="post" class="red-form">
+          <form method="post" class="red-form">
             <h6 class="red-form--title">До 30 ноября скидка</h6>
             <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+            <input type="hidden" name="name" value="Без имени">
+            <input type="hidden" name="email" value="hidden@no.email">
+            <input type="hidden" name="company" value="noname">
             <button>получить скидку</button>
             <span class="discount">30<span>%</span></span>
+            <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
           </form>
 
         </div><!-- vs-center -->

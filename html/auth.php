@@ -5,7 +5,7 @@ $user=array(
   'USER_HASH'=>'0282a871418561a90648aa4989847d00' #Хэш для доступа к API (смотрите в профиле пользователя)
 );
 
-$subdomain='new582d4972e0c71'; #Наш аккаунт - поддомен
+$subdomain='loftkirpich'; #Наш аккаунт - поддомен
 #Формируем ссылку для запроса
 $link='https://'.$subdomain.'.amocrm.ru/private/api/auth.php?type=json';
 $curl=curl_init(); #Сохраняем дескриптор сеанса cURL

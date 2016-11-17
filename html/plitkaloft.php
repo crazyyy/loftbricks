@@ -51,12 +51,16 @@
           <h1 class="home-first--title">подлинный старинный кирпич 18-19 века</h1>
           <h2 class="home-first--subtitle">напрямую с мест разбора старинных зданий</h2>
 
-          <form action="" class="red-form">
+          <form method="post" class="red-form">
             <h6 class="red-form--title">До 30 ноября скидка</h6>
             <h6 class="red-form--subtitle">на весь кирпич с клеймом</h6>
             <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+            <input type="hidden" name="name" value="Без имени">
+            <input type="hidden" name="email" value="hidden@no.email">
+            <input type="hidden" name="company" value="noname">
             <button>получить скидку</button>
             <span class="discount">30<span>%</span></span>
+            <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
           </form>
 
         </div><!-- vs-center -->
