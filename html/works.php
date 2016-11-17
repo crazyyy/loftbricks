@@ -211,6 +211,47 @@
 
   </div><!-- mainbag -->
 
+  <div class="modalbg modal-ancient-offer">
+    <div class="modal-c">
+      <h5>получите полный каталог</h5>
+      <h6>заполните поля ниже и мы вышлем вам полный каталог старинного кирпича</h6>
+      <form method="post">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg modal-ancient-sms">
+    <div class="modal-c">
+      <h6>введите данные в форму ниже мы свяжемся с вами и обсудим детли вашего проекта </h6>
+      <form method="post">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="form-sended">ваша заяка принята<span>мы свяжемся с вами в ближайшее время</span></span>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+  <div class="modalbg">
+    <div class="modal-c">
+      <h5>получите полный каталог</h5>
+      <h6>заполните поля ниже и мы вышлем вам полный каталог старинного кирпича</h6>
+      <form action="">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="phone" data-inputmask="'alias': 'phone'" placeholder="номер телефона">
+        <button class="btn btn-red">получить полный каталог</button>
+      </form>
+      <span class="close"></span>
+    </div><!-- /.modal-c -->
+  </div><!-- /.modalbg -->
+
+
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 

@@ -5985,7 +5985,7 @@ $(document).ready(function() {
   $('<style>.arrow-top::after,.home-second .arrow-top::after{border-left-width:' + borderWidth + ';border-right-width:' + borderWidth + ';margin-left:-' + borderWidth + ';}</style>').appendTo('header');
 
 
-  $(":input").inputmask(undefined, {
+  $("input[name=phone]").inputmask(undefined, {
     oncomplete: function() {
       var eventIdenticators = $(this).next().next(".eventIndicator").children("span");
       $.each(eventIdenticators, function(ndx, lmnt) {
@@ -6048,15 +6048,102 @@ $(document).ready(function() {
     });
   });
 
+  $('input[name=email]').inputmask({
+    mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+    greedy: false,
+    onBeforePaste: function (pastedValue, opts) {
+      pastedValue = pastedValue.toLowerCase();
+      return pastedValue.replace("mailto:", "");
+    },
+    definitions: {
+      '*': {
+        validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+        cardinality: 1,
+        casing: "lower"
+      }
+    }
+  });
+
   // modal forms
   $(".modal-c").click(function(event) {
     event.stopPropagation();
   });
   $('.modalbg').on('click', function(e) {
+    event.stopPropagation();
     $('.modalbg').fadeOut('fast');
   })
   $('span.close').on('click', function(e) {
     $('.modalbg').fadeOut('fast');
+  })
+
+  $('.ancient-offer .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.ancient-fourth .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.ancient-nine .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.weoffer .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.home-third .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.design--item .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.design-first .btn-red').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.design-second .btn-red').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.design-third .btn-red').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.design-fourth .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.design-five .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.home-eight .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-offer').css('display', 'flex');
+  })
+
+  $('.ancient-six .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-sms').css('display', 'flex');
+  })
+
+  $('.home-five .btn').on('click', function(e){
+    e.preventDefault();
+    $('.modal-ancient-sms').css('display', 'flex');
   })
 
 
@@ -6099,6 +6186,120 @@ $(document).ready(function() {
       $form.children('input').fadeOut('fast');
       $form.children('button').fadeOut('fast');
       $form.find('.form-sended').fadeIn('fast');
+    });
+
+    // Callback handler that will be called on failure
+    request.fail(function(jqXHR, textStatus, errorThrown) {
+      // Log the error to the console
+      console.error(
+        "The following error occurred: " +
+        textStatus, errorThrown
+      );
+    });
+
+    // Callback handler that will be called regardless
+    // if the request failed or succeeded
+    request.always(function() {
+      // Reenable the inputs
+      $inputs.prop("disabled", false);
+    });
+
+  });
+
+  // Bind to the submit event of our form
+  $(".form-container form").submit(function(event) {
+    // Prevent default posting of form - put here to work in case of errors
+    event.preventDefault();
+    // Abort any pending request
+    if (request) {
+      request.abort();
+    }
+    // setup some local variables
+    var $form = $(this);
+
+    // Let's select and cache all the fields
+    var $inputs = $form.find("input, select, button, textarea");
+
+    // Serialize the data in the form
+    var serializedData = $form.serialize();
+
+    // Let's disable the inputs for the duration of the Ajax request.
+    // Note: we disable elements AFTER the form data has been serialized.
+    // Disabled form elements will not be serialized.
+    $inputs.prop("disabled", true);
+
+    // Fire off the request to /form.php
+    request = $.ajax({
+      url: "/handler.php",
+      type: "post",
+      data: serializedData
+    });
+
+    // Callback handler that will be called on success
+    request.done(function(response, textStatus, jqXHR) {
+      // Log a message to the console
+      console.log("Ho o o oray, it worked!");
+      $form.children('input').fadeOut('fast');
+      $form.children('button').fadeOut('fast');
+      $form.find('.form-sended').fadeIn('fast');
+    });
+
+    // Callback handler that will be called on failure
+    request.fail(function(jqXHR, textStatus, errorThrown) {
+      // Log the error to the console
+      console.error(
+        "The following error occurred: " +
+        textStatus, errorThrown
+      );
+    });
+
+    // Callback handler that will be called regardless
+    // if the request failed or succeeded
+    request.always(function() {
+      // Reenable the inputs
+      $inputs.prop("disabled", false);
+    });
+
+  });
+
+  // Bind to the submit event of our form
+  $(".modal-c form").submit(function(event) {
+    // Prevent default posting of form - put here to work in case of errors
+    event.preventDefault();
+    // Abort any pending request
+    if (request) {
+      request.abort();
+    }
+    // setup some local variables
+    var $form = $(this);
+
+    // Let's select and cache all the fields
+    var $inputs = $form.find("input, select, button, textarea");
+
+    // Serialize the data in the form
+    var serializedData = $form.serialize();
+
+    // Let's disable the inputs for the duration of the Ajax request.
+    // Note: we disable elements AFTER the form data has been serialized.
+    // Disabled form elements will not be serialized.
+    $inputs.prop("disabled", true);
+
+    // Fire off the request to /form.php
+    request = $.ajax({
+      url: "/handler.php",
+      type: "post",
+      data: serializedData
+    });
+
+    // Callback handler that will be called on success
+    request.done(function(response, textStatus, jqXHR) {
+      // Log a message to the console
+      console.log("Ho o o oray, it worked!");
+      $form.parent('').children('h5').fadeOut('fast');
+      $form.parent('').children('h6').fadeOut('fast');
+      $form.children('input').fadeOut('fast');
+      $form.children('button').fadeOut('fast');
+      $form.parent('').find('.form-sended').fadeIn('fast');
     });
 
     // Callback handler that will be called on failure

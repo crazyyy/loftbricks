@@ -199,7 +199,6 @@ picture {
 
     display: none;
 
-
     text-align: center;
     text-transform: uppercase;
 
@@ -1194,6 +1193,22 @@ header {
           margin-bottom: 20px;
         }
       }
+      .form-sended {
+        font-size: 30px;
+        font-weight: bold;
+
+        display: none;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #000;
+        span {
+          font-size: 25px;
+
+          display: block;
+        }
+      }
     }
   }
 }
@@ -1524,6 +1539,22 @@ header {
       background-size: cover;
       &:hover {
         opacity: .8;
+      }
+    }
+    .form-sended {
+      font-size: 30px;
+      font-weight: bold;
+
+      display: none;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #000;
+      span {
+        font-size: 25px;
+
+        display: block;
       }
     }
   }
