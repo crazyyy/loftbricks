@@ -45,9 +45,9 @@ window.onload = function () {
     <nav class="header--nav" role="navigation">
       <ul class="headnav">
         <li><a href="/">старинный<span>кирпич</span></a></li>
-        <li><a href="/plitkaloft.html">плитка<span>из кирпича</span></a></li>
-        <li><a href="/design.html">дизайнерские<span>решения (Loft)</span></a></li>
-        <li><a href="/works.html">наши<span>работы</span></a></li>
+        <li><a href="/plitkaloft.php">плитка<span>из кирпича</span></a></li>
+        <li><a href="/design.php">дизайнерские<span>решения (Loft)</span></a></li>
+        <li><a href="/works.php">наши<span>работы</span></a></li>
       </ul>
     </nav><!-- /nav -->
 

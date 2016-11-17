@@ -33,9 +33,9 @@
     <nav class="header--nav" role="navigation">
       <ul class="headnav">
         <li><a href="/">старинный<span>кирпич</span></a></li>
-        <li><a href="/plitkaloft.html">плитка<span>из кирпича</span></a></li>
-        <li><a href="/design.html">дизайнерские<span>решения (Loft)</span></a></li>
-        <li><a href="/works.html">наши<span>работы</span></a></li>
+        <li><a href="/plitkaloft.php">плитка<span>из кирпича</span></a></li>
+        <li><a href="/design.php">дизайнерские<span>решения (Loft)</span></a></li>
+        <li><a href="/works.php">наши<span>работы</span></a></li>
       </ul>
     </nav><!-- /nav -->
 
@@ -50,45 +50,47 @@
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
-          <h1 class="design--title arrow-top">наши работы</h1>
+          <h1 class="design--title arrow-top">дизайн-проекты в стиле <span>LOFT</span></h1>
           <div class="fogged">
 
             <div class="design--item">
-              <img src="img/design--item-31.jpg" alt="">
+              <img src="img/design--item-1.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-32.jpg" alt="">
+              <img src="img/design--item-2.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-33.jpg" alt="">
+              <img src="img/design--item-3.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-34.jpg" alt="">
+              <img src="img/design--item-4.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-35.jpg" alt="">
+              <img src="img/design--item-5.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-36.jpg" alt="">
+              <img src="img/design--item-6.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-37.jpg" alt="">
+              <img src="img/design--item-7.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-38.jpg" alt="">
-              <a href="#" class="btn btn-yellow">хочу подобный проект</a>
+              <img src="img/design--item-8.jpg" alt="">
+              <a href="#" class="btn btn-yellow">оставить заявку</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-39.jpg" alt="">
+              <img src="img/design--item-9.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
+
+            <a href="#" class="btn btn-red">скачать полный каталог</a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -99,45 +101,47 @@
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
-          <h1 class="design--title arrow-top">наши работы</h1>
+          <h1 class="design--title arrow-top">дизайн-проекты в стиле <span>LOFT</span></h1>
           <div class="fogged">
 
             <div class="design--item">
-              <img src="img/design--item-41.jpg" alt="">
+              <img src="img/design--item-10.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-42.jpg" alt="">
+              <img src="img/design--item-11.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-43.jpg" alt="">
+              <img src="img/design--item-12.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-44.jpg" alt="">
+              <img src="img/design--item-13.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-45.jpg" alt="">
+              <img src="img/design--item-14.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-46.jpg" alt="">
+              <img src="img/design--item-15.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-47.jpg" alt="">
+              <img src="img/design--item-16.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-48.jpg" alt="">
+              <img src="img/design--item-17.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-49.jpg" alt="">
+              <img src="img/design--item-18.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
+
+            <a href="#" class="btn btn-red">скачать полный каталог</a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
@@ -148,61 +152,64 @@
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
-          <h1 class="design--title arrow-top">наши работы</h1>
+          <h1 class="design--title arrow-top">дизайн-проекты в стиле <span>LOFT</span></h1>
           <div class="fogged">
 
             <div class="design--item">
-              <img src="img/design--item-51.jpg" alt="">
+              <img src="img/design--item-19.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-52.jpg" alt="">
+              <img src="img/design--item-20.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-53.jpg" alt="">
+              <img src="img/design--item-21.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-54.jpg" alt="">
+              <img src="img/design--item-22.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-55.jpg" alt="">
+              <img src="img/design--item-23.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-56.jpg" alt="">
+              <img src="img/design--item-24.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-57.jpg" alt="">
+              <img src="img/design--item-25.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-58.jpg" alt="">
+              <img src="img/design--item-26.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
             <div class="design--item">
-              <img src="img/design--item-59.jpg" alt="">
+              <img src="img/design--item-27.jpg" alt="">
               <a href="#" class="btn btn-yellow">хочу подобный проект</a>
             </div><!-- /.design--item -->
+
+            <a href="#" class="btn btn-red">скачать полный каталог</a>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
       </div><!-- vs-center-wrap -->
     </div><!-- mainview -->
 
-    <div class="mainview design-five arrow-bottom">
+    <div class="mainview design-fourth arrow-bottom">
       <div class="vs-center-wrap arrow-top">
         <div class="vs-center">
 
           <div class="fogged">
-            <h1 class="design-five--title">хотите увидеть все</h1>
-            <h2 class="design-five--subtitle">наши работы?</h2>
-            <h3 class="design-five--thirdtitle">скачайте полный каталог прямо сейчас</h3>
-            <a href="#" class="btn btn-red">скачать каталог наших работ</a>
-            <h5 class="design-five--description"><span>остались вопросы? задайте их менеджеру</span></h5>
+            <h1 class="design-fourth--title">хотите увидеть еще <span>150</span></h1>
+            <h2 class="design-fourth--subtitle">дизайнерских решений</h2>
+            <h3 class="design-fourth--thirdtitle">в стиле <span>LOFT</span>?</h3>
+            <h5 class="design-fourth--description">скачайте полный каталог дизайн-проектов в стиле <span>LOFT</span> из старинного кирпича и плитки прямо сейчас</h5>
+            <a href="#" class="btn btn-red">скачать каталог дизайн-проектов</a>
+            <h4 class="design-fourth--fourthtitle">остались вопросы? <span>задайте их менеджеру</span></h4>
           </div><!-- /.fogged -->
 
         </div><!-- vs-center -->
