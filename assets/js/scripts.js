@@ -6161,6 +6161,10 @@ $(document).ready(function() {
     // setup some local variables
     var $form = $(this);
 
+console.warn('test');
+FormCheck($form);
+
+
     // Let's select and cache all the fields
     var $inputs = $form.find("input, select, button, textarea");
 
@@ -6321,3 +6325,14 @@ $(document).ready(function() {
   });
 
 });
+
+
+function FormCheck(element) {
+  var $form = $(this);
+console.warn('test2')
+  $form.children('input').each(function(index, el) {
+    console.log('test3')
+    console.log($(this).val());
+  });
+
+}
