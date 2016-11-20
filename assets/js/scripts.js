@@ -449,15 +449,3 @@ $(document).ready(function() {
 
 
 });
-
-
-function FormCheck(element) {
-  var $form = $(this);
-  console.warn('test2')
-  console.warn($form)
-  $form.children('input').each(function(index, el) {
-    console.log('test3')
-    console.log($(this).val());
-  });
-
-}
